@@ -92,7 +92,7 @@ export default function ReviewSection() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-700 italic">"{review.text}"</p>
+                    <p className="text-gray-700 italic">&ldquo;{review.text}&rdquo;</p>
                   </div>
                 </div>
               ))}

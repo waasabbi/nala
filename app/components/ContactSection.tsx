@@ -26,7 +26,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
           <p className="text-sm uppercase tracking-widest text-[#ff8c69] font-medium mb-2">Get In Touch</p>
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">We'd Love to Hear From You</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-4">We&apos;d Love to Hear From You</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Have questions about our products or services? Fill out the form below and our team will get back to you as soon as possible.
           </p>
@@ -118,7 +118,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <p className="text-gray-600 mt-1">info@nalaessence.com</p>
-                  <p className="text-gray-600">We'll respond within 24 hours</p>
+                  <p className="text-gray-600">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
               

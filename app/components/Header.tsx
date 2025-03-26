@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { FaHeart, FaUser, FaShoppingBag, FaSearch } from 'react-icons/fa';
 
 export default function Header() {
-  const [language, setLanguage] = useState('EN');
+  const [language] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
