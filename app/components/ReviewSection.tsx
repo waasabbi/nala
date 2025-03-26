@@ -9,7 +9,7 @@ export default function ReviewSection() {
       name: "Sarah Johnson",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "I've been using NALA products for 3 months now and my skin has never looked better! The body lotion is my absolute favorite - it absorbs quickly and keeps my skin hydrated all day.",
+      text: "I&apos;ve been using NALA products for 3 months now and my skin has never looked better! The body lotion is my absolute favorite - it absorbs quickly and keeps my skin hydrated all day.",
       location: "New York, USA"
     },
     {
@@ -17,7 +17,7 @@ export default function ReviewSection() {
       name: "Michael Chen",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "As someone with sensitive skin, I've always struggled to find products that don't cause irritation. NALA's natural ingredients are gentle yet effective. Highly recommend!",
+      text: "As someone with sensitive skin, I&apos;ve always struggled to find products that don&apos;t cause irritation. NALA&apos;s natural ingredients are gentle yet effective. Highly recommend!",
       location: "Toronto, Canada"
     },
     {
@@ -53,7 +53,7 @@ export default function ReviewSection() {
       <div className="max-w-7xl mx-auto px-8">
         <h2 className="section-title">Customer Reviews</h2>
         <p className="section-subtitle">
-          Don't just take our word for it. Here's what our customers have to say about their NALA experience.
+          Don&apos;t just take our word for it. Here&apos;s what our customers have to say about their NALA experience.
         </p>
         
         <div className="relative">
