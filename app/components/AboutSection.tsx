@@ -8,7 +8,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-full h-full bg-[#f8e3dd] rounded-2xl"></div>
             <Image
-              src="/hero-picture.jpg"
+              src="/hero-products.jpg"
               alt="About Us"
               width={500}
               height={600}
@@ -22,11 +22,9 @@ export default function AboutSection() {
               At NALA, we believe that healthy skin starts with pure, effective ingredients and a simple routine. Our mission is to create products that enhance your natural beauty.
             </p>
             <p className="text-gray-600 mb-4">
-              We combine the best of nature with advanced technology to deliver exceptional results. All our products are dermatologist-tested, cruelty-free, and made with sustainable practices.
-            </p>
+            We combine the best of nature with thoughtful formulation to deliver exceptional results. Powered by honored ingredients like orange peel and almond, our products are cruelty-free and made using sustainable practices.            </p>
             <p className="text-gray-600 mb-8">
-              Our team of skincare experts has developed formulations that address various skin concerns while being gentle enough for daily use.
-            </p>
+            Our team has developed gentle yet effective blends that nourish your skin daily—rooted in tradition, made for modern life.            </p>
             
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-[#f5f0eb] p-4 rounded-xl text-center">

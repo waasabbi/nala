@@ -104,7 +104,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 mt-1">+1 (469) 556-2991</p>
                   <p className="text-gray-600">Monday-Friday, 9am-6pm EST</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-600 mt-1">info@nalaessence.com</p>
+                  <p className="text-gray-600 mt-1">info@essencenala@gmail.com</p>
                   <p className="text-gray-600">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
@@ -131,8 +131,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Office</h4>
-                  <p className="text-gray-600 mt-1">123 Fifth Avenue</p>
-                  <p className="text-gray-600">New York, NY 10160</p>
+                  <p className="text-gray-600 mt-1"> 4902 Colleyville Blvd #104</p>
+                  <p className="text-gray-600">Colleyville, TX 76034</p>
                 </div>
               </div>
             </div>
