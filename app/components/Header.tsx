@@ -36,27 +36,27 @@ export default function Header() {
         <nav className="hidden md:flex gap-10 text-sm tracking-wide font-medium">
           <button 
             onClick={() => scrollToSection('hero')} 
-            className="text-gray-800 hover:text-[#ff8c69] transition-colors"
+            className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
           >
-            Home
+            HOME
           </button>
           <button 
             onClick={() => scrollToSection('about')} 
-            className="text-gray-800 hover:text-[#ff8c69] transition-colors"
+            className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
           >
-            About Us
+            ABOUT US
           </button>
           <button 
             onClick={() => scrollToSection('reviews')} 
-            className="text-gray-800 hover:text-[#ff8c69] transition-colors"
+            className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
           >
-            Reviews
+            REVIEWS
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
-            className="text-gray-800 hover:text-[#ff8c69] transition-colors"
+            className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
           >
-            Contact
+            CONTACT
           </button>
         </nav>
 
@@ -64,7 +64,7 @@ export default function Header() {
         <div className="text-2xl font-serif tracking-wider font-bold text-gray-900">NALA</div>
 
         {/* Right side - Icons */}
-        <div className="flex items-center gap-6 text-gray-800">
+        {/* <div className="flex items-center gap-6 text-gray-800">
           <FaSearch className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
           <span className="cursor-pointer hover:text-[#ff8c69] transition-colors hidden md:inline-block text-sm font-medium tracking-wide">{language} ▾</span>
           <FaHeart className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
@@ -75,7 +75,7 @@ export default function Header() {
               2
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
       
       {/* Mobile Navigation */}
