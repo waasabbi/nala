@@ -5,7 +5,7 @@ import AboutSection from './components/AboutSection';
 import ReviewSection from './components/ReviewSection';
 // import StoresSection from './components/StoresSection';
 import ContactSection from './components/ContactSection';
-import Newsletter from './components/Newsletter';
+// import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <AboutSection />
       <ReviewSection />
       {/* <StoresSection /> */}
-      <Newsletter />
+      {/* <Newsletter /> */}
       <ContactSection />
       <Footer />
     </main>

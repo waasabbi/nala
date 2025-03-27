@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="mt-10 md:mt-0 relative">
           <div className="absolute w-full h-full bg-[#ff8c69] opacity-10 rounded-full transform scale-90"></div>
           <Image
-            src="/hero-picture.jpg"
+            src="/hero-products.jpg"
             alt="Product group"
             width={500}
             height={500}

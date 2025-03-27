@@ -1,5 +1,5 @@
 'use client';
-import { FaInstagram, FaFacebook, FaTwitter, FaPinterest, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -18,27 +18,10 @@ export default function Footer() {
               <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
                 <FaFacebook size={18} />
               </a>
-              {/* <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
-                <FaTwitter size={18} />
-              </a>
-              <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
-                <FaPinterest size={18} />
-              </a>
-              <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
-                <FaYoutube size={18} />
-              </a> */}
+            
             </div>
           </div>
           
-          {/* <div>
-            <h3 className="text-lg font-medium mb-4">Shop</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li><button onClick={() => document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-[#ff8c69] transition-colors">All Products</button></li>
-              <li><a href="#" className="hover:text-[#ff8c69] transition-colors">Body Care</a></li>
-              <li><a href="#" className="hover:text-[#ff8c69] transition-colors">Face Care</a></li>
-              <li><a href="#" className="hover:text-[#ff8c69] transition-colors">Gift Sets</a></li>
-            </ul>
-          </div> */}
           
           <div>
             <h3 className="text-lg font-medium mb-4">Company</h3>

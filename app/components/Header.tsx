@@ -1,7 +1,6 @@
 // components/Header.tsx
 'use client';
 import { useState, useEffect } from 'react';
-import { FaHeart, FaUser, FaShoppingBag, FaSearch } from 'react-icons/fa';
 
 export default function Header() {
   const [language] = useState('EN');
@@ -60,38 +59,24 @@ export default function Header() {
           </button>
         </nav>
 
-        {/* Brand Name in Center */}
         <div className="text-2xl font-serif tracking-wider font-bold text-gray-900">NALA</div>
 
-        {/* Right side - Icons */}
-        {/* <div className="flex items-center gap-6 text-gray-800">
-          <FaSearch className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
-          <span className="cursor-pointer hover:text-[#ff8c69] transition-colors hidden md:inline-block text-sm font-medium tracking-wide">{language} ▾</span>
-          <FaHeart className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
-          <FaUser className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
-          <div className="relative">
-            <FaShoppingBag className="cursor-pointer hover:text-[#ff8c69] transition-colors" />
-            <span className="absolute -top-2 -right-2 text-xs bg-[#ff8c69] text-white w-4 h-4 rounded-full flex items-center justify-center">
-              2
-            </span>
-          </div>
-        </div> */}
+      
       </div>
       
-      {/* Mobile Navigation */}
       <div className="md:hidden flex justify-center mt-3 pb-3 border-b border-gray-100">
-        <nav className="flex gap-8 text-xs font-medium text-gray-800">
+        <nav className="flex gap-8 text-xs font-bold text-gray-800">
           <button onClick={() => scrollToSection('hero')} className="hover:text-[#ff8c69] transition-colors">
-            Home
+            HOME
           </button>
           <button onClick={() => scrollToSection('about')} className="hover:text-[#ff8c69] transition-colors">
-            About
+            ABOUT
           </button>
           <button onClick={() => scrollToSection('reviews')} className="hover:text-[#ff8c69] transition-colors">
-            Reviews
+            REVIEWS
           </button>
           <button onClick={() => scrollToSection('contact')} className="hover:text-[#ff8c69] transition-colors">
-            Contact
+            CONTACT
           </button>
         </nav>
       </div>

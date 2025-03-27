@@ -9,7 +9,7 @@ export default function ReviewSection() {
       name: "Xenia Aamya",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "I've been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
+      text: "I have been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
       location: "Texas, USA"
     },
     {
@@ -49,24 +49,24 @@ export default function ReviewSection() {
   };
 
   return (
-    <section id="reviews" className="py-20 bg-[#f8e3dd]">
-      <div className="max-w-7xl mx-auto px-8">
-        <h2 className="section-title">Customer Reviews</h2>
-        <p className="section-subtitle">
+    <section id="reviews" className="py-16 md:py-20 bg-[#f8e3dd]">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 className="section-title text-2xl md:text-3xl lg:text-4xl font-serif text-center mb-3">Customer Reviews</h2>
+        <p className="section-subtitle text-sm md:text-base text-center text-gray-600 max-w-2xl mx-auto mb-10 md:mb-12 px-4">
           Don't just take our word for it. Here's what our customers have to say about their NALA experience.
         </p>
         
-        <div className="relative">
-          <div className="flex overflow-hidden">
+        <div className="relative px-2 md:px-8">
+          <div className="overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out" 
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               {reviews.map((review) => (
-                <div key={review.id} className="w-full flex-shrink-0 px-4">
-                  <div className="bg-white p-8 rounded-2xl shadow-sm max-w-3xl mx-auto">
-                    <div className="flex items-center mb-6">
-                      <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-[#ff8c69]">
+                <div key={review.id} className="w-full flex-shrink-0 px-2 md:px-4">
+                  <div className="bg-white p-5 md:p-8 rounded-2xl shadow-sm max-w-3xl mx-auto">
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-4 md:mb-6">
+                      <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden mb-3 sm:mb-0 sm:mr-4 border-2 border-[#ff8c69] mx-auto sm:mx-0">
                         <Image
                           src={review.avatar}
                           alt={review.name}
@@ -74,10 +74,10 @@ export default function ReviewSection() {
                           className="object-cover"
                         />
                       </div>
-                      <div>
+                      <div className="text-center sm:text-left">
                         <h3 className="font-serif text-lg">{review.name}</h3>
                         <p className="text-gray-500 text-sm">{review.location}</p>
-                        <div className="flex mt-1">
+                        <div className="flex mt-1 justify-center sm:justify-start">
                           {[...Array(5)].map((_, i) => (
                             <svg 
                               key={i} 
@@ -92,7 +92,7 @@ export default function ReviewSection() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-700 italic">&ldquo;{review.text}&rdquo;</p>
+                    <p className="text-gray-700 italic text-sm md:text-base text-center sm:text-left">&ldquo;{review.text}&rdquo;</p>
                   </div>
                 </div>
               ))}
@@ -101,31 +101,31 @@ export default function ReviewSection() {
           
           <button 
             onClick={prevReview}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-md hover:bg-gray-100 transition-colors z-10"
             aria-label="Previous review"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff8c69]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-[#ff8c69]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           
           <button 
             onClick={nextReview}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-md hover:bg-gray-100 transition-colors z-10"
             aria-label="Next review"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff8c69]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-[#ff8c69]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
         
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-6 md:mt-8">
           {reviews.map((_, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`w-3 h-3 rounded-full mx-1.5 ${
+              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full mx-1.5 ${
                 index === activeIndex ? 'bg-[#ff8c69]' : 'bg-gray-300'
               }`}
               aria-label={`Go to review ${index + 1}`}

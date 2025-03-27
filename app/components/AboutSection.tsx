@@ -8,10 +8,10 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-full h-full bg-[#f8e3dd] rounded-2xl"></div>
             <Image
-              src="/hero-products.jpg"
+              src="/hero-picture.jpg"
               alt="About Us"
-              width={500}
-              height={600}
+              width={300}
+              height={400}
               className="relative z-10 rounded-2xl object-cover"
             />
           </div>
