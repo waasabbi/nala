@@ -53,7 +53,7 @@ export default function ReviewSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="section-title text-2xl md:text-3xl lg:text-4xl font-serif text-center mb-3">Customer Reviews</h2>
         <p className="section-subtitle text-sm md:text-base text-center text-gray-600 max-w-2xl mx-auto mb-10 md:mb-12 px-4">
-          Don't just take our word for it. Here's what our customers have to say about their NALA experience.
+          Don&apos;t just take our word for it. Here&apos;s what our customers have to say about their NALA experience.
         </p>
         
         <div className="relative px-2 md:px-8">
