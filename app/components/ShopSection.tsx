@@ -1,41 +1,34 @@
+// components/Shop.tsx
 'use client';
 import Image from 'next/image';
 
 export default function ShopSection() {
   return (
-    <section id="shop" className="py-20 bg-[#f5f0eb]">
-      <div className="max-w-7xl mx-auto px-8">
-        <h2 className="section-title">Our Products</h2>
-        <p className="section-subtitle">
-          Discover our collection of premium skincare products designed to nourish and rejuvenate your skin.
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {[1, 2, 3].map((item) => (
-            <div key={item} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
-              <div className="relative h-64 mb-6 overflow-hidden rounded-xl">
-                <div className="absolute inset-0 bg-[#f8e3dd] group-hover:bg-[#ffd6c9] transition-colors"></div>
-                <Image
-                  src={`/product-${item}.jpg`}
-                  alt={`Product ${item}`}
-                  fill
-                  className="object-cover scale-90 group-hover:scale-95 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="text-xl font-serif mb-2">Body Lotion</h3>
-              <p className="text-gray-600 mb-4">
-                Enriched with natural oils and vitamins to deeply moisturize and nourish your skin.
-              </p>
-              <div className="flex justify-between items-center">
-                <p className="text-lg font-medium">$49.99</p>
-                <button className="px-4 py-2 bg-[#ff8c69] text-white rounded-full hover:bg-[#ff7f5c] transition-colors">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
+    <section id="shop" className="bg-[#fff5f0] py-20 px-8">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-serif font-semibold text-gray-800 mb-8">
+          Our First Star Product
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          <Image
+            src="/hero-products.jpg" // make sure this image exists in /public
+            alt="Sunrise Face Mask"
+            width={300}
+            height={300}
+            className="rounded-xl shadow-lg object-cover"
+          />
+          <div className="text-left max-w-md space-y-4">
+            <h3 className="text-2xl font-semibold text-gray-800">Sunrise Face Mask</h3>
+            <p className="text-gray-600">
+              Crafted with dried orange peel and ancient South Asian skincare wisdom, our Sunrise Face Mask revives dull skin with nature’s glow.
+            </p>
+            <button className="px-6 py-3 bg-[#ff8c69] text-white rounded-full hover:bg-[#ff7f5c] transition-colors">
+              Shop Now
+            </button>
+          </div>
         </div>
       </div>
     </section>
   );
-} 
+}

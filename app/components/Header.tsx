@@ -49,7 +49,7 @@ export default function Header() {
             onClick={() => scrollToSection('reviews')} 
             className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
           >
-            REVIEWS
+            SHOP 
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
@@ -59,7 +59,7 @@ export default function Header() {
           </button>
         </nav>
 
-        <div className="text-2xl font-serif tracking-wider font-bold text-gray-900">NALA</div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-serif tracking-wider font-bold text-gray-800">NALA</div>
 
       
       </div>

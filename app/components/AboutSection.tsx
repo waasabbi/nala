@@ -17,14 +17,14 @@ export default function AboutSection() {
           </div>
           <div>
             <p className="text-sm uppercase tracking-widest text-[#ff8c69] font-medium mb-2">Our Story</p>
-            <h2 className="text-3xl md:text-4xl font-serif mb-6">The ultimate guide to radiant beauty</h2>
+            <h2 className="text-3xl md:text-3xl font-serif mb-6">The ultimate guide to radiant beauty</h2>
             <p className="text-gray-600 mb-4">
-              At NALA, we believe that healthy skin starts with pure, effective ingredients and a simple routine. Our mission is to create products that enhance your natural beauty.
+              At Nala, we believe that healthy skin starts with pure, effective ingredients and a simple routine. Our mission is to create fully organic products, the way nature intended.
             </p>
             <p className="text-gray-600 mb-4">
-            We combine the best of nature with thoughtful formulation to deliver exceptional results. Powered by honored ingredients like orange peel and almond, our products are cruelty-free and made using sustainable practices.            </p>
+            We combine the best of nature to deliver exceptional results. With ingredients like orange, almond, and saffron. Our products are cruelty-free and chemical-free. </p>
             <p className="text-gray-600 mb-8">
-            Our team has developed gentle yet effective blends that nourish your skin daily—rooted in tradition, made for modern life.            </p>
+            Our team has developed a gentle yet effective blend that nourish your skin daily, an essence deeply rooted in South-Asian tradition, and made for modern life.</p>
             
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-[#f5f0eb] p-4 rounded-xl text-center">
