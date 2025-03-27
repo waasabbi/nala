@@ -9,7 +9,7 @@ export default function ReviewSection() {
       name: "Xenia Aamya",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "I have been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
+      text: "I&apos;ve been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
       location: "Texas, USA"
     },
     {
@@ -17,7 +17,7 @@ export default function ReviewSection() {
       name: "Michael Chen",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "As someone with sensitive skin, I've always struggled to find products that don't cause irritation. NALA's natural ingredients are gentle yet effective. Highly recommend!",
+      text: "As someone with sensitive skin, I&apos;ve always struggled to find products that don&apos;t cause irritation. NALA&apos;s natural ingredients are gentle yet effective. Highly recommend!",
       location: "Toronto, Canada"
     },
     {

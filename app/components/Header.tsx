@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Header() {
-  const [language] = useState('EN');
+  // const [language] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
