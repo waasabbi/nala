@@ -5,9 +5,6 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section id="hero" className="relative w-full bg-[#f8e3dd] overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#ff8c69] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#ff8c69] opacity-10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-      
       <div className="grid md:grid-cols-2 items-center px-8 py-20 max-w-7xl mx-auto relative z-10">
         <div className="space-y-6">
           <p className="text-sm uppercase tracking-widest text-[#ff8c69] font-medium">Treat Your Body Like Your Face</p>
