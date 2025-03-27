@@ -9,7 +9,7 @@ export default function ReviewSection() {
       name: "Xenia Aamya",
       avatar: "/hero-products.jpg",
       rating: 5,
-      text: "I&apos;ve been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
+      text: "I have been using NALA products for 3 months now and my skin has never looked better! The face mask is my absolute favorite - it keeps my skin hydrated all day.",
       location: "Texas, USA"
     },
     {

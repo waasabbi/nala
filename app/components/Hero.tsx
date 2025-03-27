@@ -12,7 +12,7 @@ export default function Hero() {
             Glow naturally with skin care
           </h1>
           <p className="text-gray-600 max-w-md text-lg">
-            Our skincare line is crafted with pure, high-quality ingredients for visible results. Vegan, natural, and rich in effective biotechnological ingredients.
+            Our skincare line is crafted with pure, high-quality ingredients for visible results. Organic, natural, and rich in effective biotechnological ingredients.
           </p>
           <button 
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
@@ -21,14 +21,15 @@ export default function Hero() {
             Discover More
           </button>
         </div>
-        <div className="mt-10 md:mt-0 relative">
-          <div className="absolute w-full h-full bg-[#ff8c69] opacity-10 rounded-full transform scale-90"></div>
+        <div className="mt-10 md:mt-0 flex justify-center relative">
+
+          <div className="absolute w-full h-full bg-[#ff8c69] opacity-10 rounded-[6.5rem] transform scale-10"></div>
           <Image
-            src="/hero-products.jpg"
+            src="/hero-picture.jpg"
             alt="Product group"
-            width={500}
-            height={500}
-            className="rounded-full object-cover relative z-10"
+            width={420}
+            height={450}
+            className="rounded-[6.5rem] object-cover relative z-10"
           />
         </div>
       </div>

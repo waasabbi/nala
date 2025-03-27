@@ -5,14 +5,14 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-full h-full bg-[#f8e3dd] rounded-2xl"></div>
+          <div className="relative w-fit">
+            <div className="absolute -top-5 -left-6 w-[400px] h-[300px] bg-[#fff1f0] rounded-[2rem]"></div>
             <Image
-              src="/hero-picture.jpg"
+              src="/hero-products.jpg"
               alt="About Us"
               width={300}
               height={400}
-              className="relative z-10 rounded-2xl object-cover"
+              className="relative z-10 rounded-[2rem] object-cover"
             />
           </div>
           <div>

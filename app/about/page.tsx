@@ -10,7 +10,7 @@ export default function AboutPage() {
       Our team of skincare experts has developed gentle yet effective blends that nourish your skin daily—rooted in tradition, made for modern life.
       </p>
       <p className="mb-4">
-        Founded in 2018, NALA was born from our founder&apos;s struggle to find skincare products that didn&apos;t irritate her sensitive skin. After years of research and collaboration with dermatologists, we developed our signature line of gentle yet effective formulations.
+        Founded in 2018, NALA was born from our founder&apos;s struggle to find skincare products that didn&apos;t irritate her sensitive skin. After years of trail and collaboration with our experts, we developed our signature line of gentle yet effective formulations.
       </p>
       <p className="mb-4">
         All our products are:
