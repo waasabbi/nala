@@ -1,6 +1,8 @@
 // components/Header.tsx
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
 
 export default function Header() {
   // const [language] = useState('EN');
@@ -45,12 +47,13 @@ export default function Header() {
           >
             ABOUT US
           </button>
-          <button 
-            onClick={() => scrollToSection('reviews')} 
+          <Link 
+              href="/shop" 
             className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
-          >
-            SHOP 
-          </button>
+            >
+           SHOP
+          </Link>
+
           <button 
             onClick={() => scrollToSection('contact')} 
             className="text-gray-800 font-bold hover:text-[#ff8c69] transition-colors"
@@ -72,9 +75,10 @@ export default function Header() {
           <button onClick={() => scrollToSection('about')} className="hover:text-[#ff8c69] transition-colors">
             ABOUT
           </button>
-          <button onClick={() => scrollToSection('reviews')} className="hover:text-[#ff8c69] transition-colors">
-            REVIEWS
-          </button>
+          <Link href="/shop" className="hover:text-[#ff8c69] transition-colors">
+            SHOP
+          </Link>
+
           <button onClick={() => scrollToSection('contact')} className="hover:text-[#ff8c69] transition-colors">
             CONTACT
           </button>
