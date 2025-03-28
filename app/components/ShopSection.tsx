@@ -7,7 +7,7 @@ export default function ShopSection() {
     <section id="shop" className="bg-[#fff5f0] py-20 px-8">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-serif font-semibold text-gray-800 mb-8">
-          Our First Star Product
+        Pure. Loved. Trusted.
         </h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
