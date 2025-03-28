@@ -1,7 +1,6 @@
 // components/Header.tsx
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
 import { useCartStore } from '../store/cartStore'; 
 
@@ -102,9 +101,7 @@ export default function Header() {
     <button onClick={() => scrollToSection('about')} className="hover:text-[#ff8c69] transition-colors">
       ABOUT
     </button>
-    <Link href="/shop" className="hover:text-[#ff8c69] transition-colors">
-      SHOP
-    </Link>
+    <button onClick={() => scrollToSection('shop')}>SHOP</button>
     <button onClick={() => scrollToSection('contact')} className="hover:text-[#ff8c69] transition-colors">
       CONTACT
     </button>

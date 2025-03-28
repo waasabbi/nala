@@ -12,7 +12,7 @@ export default function Footer() {
               Premium skincare products made with natural ingredients for a healthier, more radiant you.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
+              <a href="https://www.instagram.com/essencenala/" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">
                 <FaInstagram size={18} />
               </a>
               <a href="#" className="bg-white p-2 rounded-full text-[#ff8c69] hover:bg-[#ff8c69] hover:text-white transition-colors">

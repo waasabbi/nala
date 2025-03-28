@@ -117,7 +117,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-600 mt-1">info@essencenala@gmail.com</p>
+                  <p className="text-gray-600 mt-1">essencenala@gmail.com</p>
                   <p className="text-gray-600">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
