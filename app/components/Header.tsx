@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ShoppingCart } from 'lucide-react';
 import { useCartStore } from '../store/cartStore'; 
-import { useRouter } from 'next/navigation';
 
 
 
@@ -12,7 +11,6 @@ import { useRouter } from 'next/navigation';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const router = useRouter(); // ✅ Moved here INSIDE the component
   const cartItems = useCartStore((state) => state.items); 
   const setIsOpen = useCartStore((state) => state.setIsOpen);
   

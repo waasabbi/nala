@@ -11,7 +11,7 @@ export default function ShopSection() {
   const [quantity, setQuantity] = useState(1);
 
 
-  const { addToCart, items } = useCartStore();
+  const { addToCart, items, increaseQuantity, decreaseQuantity } = useCartStore();
 
   let hoverTimeout: NodeJS.Timeout;
 
@@ -27,13 +27,15 @@ export default function ShopSection() {
   const handleAddToCart = () => {
     setItemAdded(true);
     setIsOpen(true);
-    addToCart({
-      id: 1,
-      name: 'Sunrise Face Mask',
-      price: 18,
-      image: '/hero-products.jpg',
-      quantity: 1,
-    });
+    for (let i = 0; i < quantity; i++) {
+      addToCart({
+        id: 1,
+        name: 'Sunrise Face Mask',
+        price: 18,
+        image: '/hero-products.jpg',
+        quantity: 1,
+      });
+    }
   };
 
   return (
@@ -63,10 +65,25 @@ export default function ShopSection() {
           <div className="flex-1 overflow-y-auto space-y-4">
             {items.map((item) => (
               <div key={item.id} className="flex items-center gap-4">
-                <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded-lg" />
-                <div>
+                <Image src={item.image} width={64} height={64} alt={item.name} className="rounded-lg" />
+                <div className="flex-1">
                   <p className="font-medium text-gray-800">{item.name}</p>
                   <p className="text-sm text-gray-600">${item.price} × {item.quantity}</p>
+                  <div className="flex items-center gap-2 mt-1">
+                    <button
+                      onClick={() => decreaseQuantity(item.id)}
+                      className="px-2 py-1 bg-gray-200 rounded"
+                    >
+                      -
+                    </button>
+                    <span>{item.quantity}</span>
+                    <button
+                      onClick={() => increaseQuantity(item.id)}
+                      className="px-2 py-1 bg-gray-200 rounded"
+                    >
+                      +
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -114,6 +131,21 @@ export default function ShopSection() {
             </p>
             <div className="flex items-center gap-4 mt-4">
               <span className="text-xl font-semibold text-gray-800">$18</span>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+                  className="px-2 py-1 bg-gray-200 rounded"
+                >
+                  -
+                </button>
+                <span>{quantity}</span>
+                <button
+                  onClick={() => setQuantity((prev) => prev + 1)}
+                  className="px-2 py-1 bg-gray-200 rounded"
+                >
+                  +
+                </button>
+              </div>
               <button
                 onClick={handleAddToCart}
                 disabled={itemAdded}
