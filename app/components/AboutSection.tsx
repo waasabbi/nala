@@ -1,20 +1,29 @@
+'use client';
+
 import Image from 'next/image';
+import { useCartStore } from '../store/cartStore';
 
 export default function AboutSection() {
+  const isOpen = useCartStore((state) => state.isOpen);
+
   return (
+    
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative w-fit">
-            <div className="absolute -top-5 -left-6 w-[400px] h-[300px] bg-[#fff1f0] rounded-[2rem]"></div>
-            <Image
-              src="/hero-products.jpg"
-              alt="About Us"
-              width={300}
-              height={400}
-              className="relative z-10 rounded-[2rem] object-cover"
-            />
-          </div>
+        <div className="relative w-fit">
+      <div className="absolute -top-5 -left-6 w-[400px] h-[300px] bg-[#fff1f0] rounded-[2rem]" />
+      <Image
+        src="/hero-products.jpg"
+        alt="About Us"
+        width={300}
+        height={400}
+        className={`relative z-10 rounded-[2rem] object-cover transition duration-300 ${
+          isOpen ? 'blur-sm opacity-60' : ''
+        }`}
+      />
+    </div>
+
           <div>
             <p className="text-sm uppercase tracking-widest text-[#ff8c69] font-medium mb-2">Our Story</p>
             <h2 className="text-3xl md:text-3xl font-serif mb-6">The ultimate guide to radiant beauty</h2>
