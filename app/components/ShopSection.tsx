@@ -8,6 +8,8 @@ export default function ShopSection() {
   const isOpen = useCartStore((state) => state.isOpen);
   const setIsOpen = useCartStore((state) => state.setIsOpen);
   const [itemAdded, setItemAdded] = useState(false);
+  const [quantity, setQuantity] = useState(1);
+
 
   const { addToCart, items } = useCartStore();
 
