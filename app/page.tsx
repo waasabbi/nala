@@ -7,13 +7,15 @@ import ReviewSection from './components/ReviewSection';
 import ContactSection from './components/ContactSection';
 // import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import ShopSection from './components/ShopSection';
+
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
-      {/* <ShopSection /> */}
+      <ShopSection /> 
       <AboutSection />
       <ReviewSection />
       {/* <StoresSection /> */}
@@ -23,3 +25,5 @@ export default function Home() {
     </main>
   );
 }
+
+
