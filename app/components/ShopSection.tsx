@@ -38,6 +38,23 @@ export default function ShopSection() {
     }
   };
 
+  const handleCheckout = async () => {
+    const res = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items }), // `items` from useCartStore
+    });
+  
+    const data = await res.json();
+  
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert('Checkout failed.');
+    }
+  };
+  
+
   return (
     <section id="shop" className="bg-[#fff5f0] py-20 px-8 relative z-10">
       {/* Blurred backdrop when cart is open */}
@@ -90,11 +107,12 @@ export default function ShopSection() {
           </div>
 
           <button
-            onClick={() => setIsOpen(false)}
-            className="w-full bg-[#ff8c69] text-white py-2 rounded-full hover:bg-[#ff7f5c] transition"
-          >
-            Checkout
-          </button>
+          onClick={handleCheckout}
+          className="w-full bg-[#ff8c69] text-white py-2 rounded-full hover:bg-[#ff7f5c] transition"
+        >
+          Checkout
+        </button>
+
         </div>
       </div>
 
