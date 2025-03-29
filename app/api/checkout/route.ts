@@ -3,6 +3,13 @@ import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
+type CheckoutItem = {
+    name: string;
+    image: string;
+    price: number;
+    quantity: number;
+  };
+
 export async function POST(req: NextRequest) {
   const body = await req.json();
   console.log('🛒 Incoming checkout items:', body.items);
@@ -10,12 +17,13 @@ export async function POST(req: NextRequest) {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
-      line_items: body.items.map((item: any) => ({
+      line_items: body.items.map((item: CheckoutItem) => ({
         price_data: {
           currency: 'usd',
           product_data: {
             name: item.name,
-            images: [item.image.startsWith('http') ? item.image : `https://nalaessence.com${item.image}`],
+            images: [item.image.startsWith('http') 
+            ? item.image : `https://nalaessence.com${item.image}`],
           },
           unit_amount: item.price * 100,
         },
