@@ -16,23 +16,30 @@ export async function POST(req: NextRequest) {
 
   try {
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ['card'],
-      line_items: body.items.map((item: CheckoutItem) => ({
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: item.name,
-            images: [item.image.startsWith('http') 
-            ? item.image : `https://nalaessence.com${item.image}`],
+        payment_method_types: ['card'],
+        line_items: body.items.map((item: CheckoutItem) => ({
+          price_data: {
+            currency: 'usd',
+            product_data: {
+              name: item.name,
+              images: [
+                item.image.startsWith('http') 
+                  ? item.image 
+                  : `${req.nextUrl.origin}${item.image}`,
+              ],
+            },
+            unit_amount: item.price * 100,
           },
-          unit_amount: item.price * 100,
+          quantity: item.quantity,
+        })),
+        mode: 'payment',
+        shipping_address_collection: {
+          allowed_countries: ['US'], // you can add more countries here
         },
-        quantity: item.quantity,
-      })),
-      mode: 'payment',
-      success_url: `${req.nextUrl.origin}/success`,
-      cancel_url: `${req.nextUrl.origin}/cancel`,
-    });
+        success_url: `${req.nextUrl.origin}/success`,
+        cancel_url: `${req.nextUrl.origin}/cancel`,
+      });
+      
 
     console.log('✅ Stripe session created:', session.id);
     return NextResponse.json({ url: session.url });

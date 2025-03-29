@@ -16,7 +16,7 @@ export default function ShopSection() {
   let hoverTimeout: NodeJS.Timeout;
 
   const handleMouseEnter = () => {
-    hoverTimeout = setTimeout(() => setHovered(true), 500);
+    hoverTimeout = setTimeout(() => setHovered(true), 100);
   };
 
   const handleMouseLeave = () => {
@@ -30,7 +30,7 @@ export default function ShopSection() {
     for (let i = 0; i < quantity; i++) {
       addToCart({
         id: 1,
-        name: 'Sunrise Face Mask',
+        name: 'Citrus Bloom Face Mask',
         price: 18,
         image: '/hero-products.jpg',
         quantity: 1,
@@ -130,7 +130,7 @@ export default function ShopSection() {
           >
             <Image
               src="/facemask.jpg"
-              alt="Sunrise Face Mask"
+              alt="Citrus Bloom Face Mask"
               fill
               className={`object-cover transition-opacity duration-500 ${hovered ? 'opacity-0' : 'opacity-100'}`}
             />
@@ -143,9 +143,9 @@ export default function ShopSection() {
           </div>
 
           <div className="text-left max-w-md space-y-4">
-            <h3 className="text-2xl font-semibold text-gray-800">Sunrise Face Mask</h3>
+            <h3 className="text-2xl font-semibold text-gray-800">Citrus Bloom Face Mask</h3>
             <p className="text-gray-600">
-              Crafted with dried orange peel and ancient South Asian skincare wisdom, our Sunrise Face Mask revives dull skin with a natural glow.
+              Crafted with dried orange peel and ancient South Asian skincare wisdom, our Citrus Bloom Face Mask revives dull skin with a natural glow.
             </p>
             <div className="flex items-center gap-4 mt-4">
               <span className="text-xl font-semibold text-gray-800">$18</span>
